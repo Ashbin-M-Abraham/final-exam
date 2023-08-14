@@ -1,0 +1,184 @@
+
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+    color: #f8f8f8;
+}
+
+body {
+
+    font-family: 'Roboto', sans-serif;
+}
+h1{display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 125px;
+    width: 100%;
+    background: #125784;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo-img {
+    height: 70px;
+    width: auto;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #f8f8f8;
+    transition: color 0.3s;
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+}
+
+.heading {
+    background-image: url("../img/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    height: 500px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-bar{
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.hero {
+    display: flex;
+    color: #fff;
+    height:250px;
+    width: 100%;
+}
+.text{
+    background: #f57f17;
+}
+.side > img{
+    display: flex;
+    height:250px;
+    margin-right: 0;
+
+}
+
+.images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.images > img {
+    max-width: 33.33%;
+}
+
+.form {
+    background: #5e35b1;
+}
+input{
+    margin-top: 10px;
+}
+button{
+    width: 50%;
+    margin-top: 5px;
+}
+
+
+footer {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    background: #0e0e0e;
+    color: #f8f8f8;
+}
+
+.footer-image {
+    height: 70px;
+    width: auto;
+    margin: 20px;
+}
+.data{
+    width: 50%;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+}
+.footer-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+}
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .logo-img {
+        margin: 20px 0;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text, .side {
+        width: 100%;
+    }
+
+    .images {
+        flex-direction: column;
+    }
+
+    .images > img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .data, button {
+        width: 100%;
+    }
+
+    .footer-title {
+        margin-top: 20px;
+    }
+
+    .footer-text {
+        text-align: center;
+        margin-top: 10px;
+    }
+}
